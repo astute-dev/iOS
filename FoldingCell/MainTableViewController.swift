@@ -35,8 +35,30 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        
+        leftSwipe.direction = .Left
+        rightSwipe.direction = .Right
+        
+        view.addGestureRecognizer(leftSwipe)
+        view.addGestureRecognizer(rightSwipe)
         createCellHeightsArray()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+    }
+    
+    func handleSwipes(sender:UISwipeGestureRecognizer) {
+        if (sender.direction == .Left) {
+            print("Swipe Left")
+            
+            
+        }
+        
+        if (sender.direction == .Right) {
+            print("Swipe Right")
+            self.performSegueWithIdentifier("index", sender: self)
+            
+        }
     }
     
     // MARK: configure
@@ -64,6 +86,7 @@ class MainTableViewController: UITableViewController {
                 foldingCell.selectedAnimation(false, animated: false, completion:nil)
             } else {
                 foldingCell.selectedAnimation(true, animated: false, completion: nil)
+                
             }
         }
     }
@@ -101,7 +124,10 @@ class MainTableViewController: UITableViewController {
         cell.ex_location.text = content.location[indexPath.item]
         cell.ex_time.text = "\(timeparse[0]):\(timeparse[1])"
         cell.ex_date.text = "\(dtrs)"
- 
+//        var sep = UIImageView(image: UIImage(named: content.image_name[indexPath.item]))
+//        cell.addSubview(sep)
+//        sep.alpha = 0.5
+        
         
         return cell
     }
@@ -135,7 +161,9 @@ class MainTableViewController: UITableViewController {
             tableView.beginUpdates()
             tableView.endUpdates()
             }, completion: nil)
-        
-        
+
     }
+    
+    
+    
 }

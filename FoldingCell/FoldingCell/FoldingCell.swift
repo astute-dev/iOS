@@ -25,6 +25,8 @@ import UIKit
 
 public class FoldingCell: UITableViewCell {
     
+    @IBOutlet weak var ed: UIImageView!
+    @IBOutlet weak var imama: UIImageView!
     @IBOutlet weak var eeDescrip: UILabel!
     
     @IBOutlet weak var coursnumero: UILabel!
@@ -127,11 +129,13 @@ public class FoldingCell: UITableViewCell {
         if animationType == .Open {
             for view in animationViewSuperView.filter({$0 is RotatedView}) {
                 view.alpha = 0;
+                
             }
         } else { // close
             for case let view as RotatedView in animationViewSuperView.filter({$0 is RotatedView}) {
                 if animationType == .Open {
                     view.alpha = 0
+                    self.imama.alpha = 0
                 } else {
                     view.alpha = 1
                     view.backView?.alpha = 0
@@ -285,9 +289,11 @@ public class FoldingCell: UITableViewCell {
             if animated {
                 containerView.alpha = 0;
                 openAnimation(completion: completion)
+
             } else  {
                 foregroundView.alpha = 0
                 containerView.alpha = 1;
+                
             }
             
         } else {
@@ -334,6 +340,7 @@ public class FoldingCell: UITableViewCell {
             durations.append(NSTimeInterval(duration / 2.0))
         }
         return durations
+        
     }
     
     func openAnimation(completion completion: CompletionHandler?) {
@@ -387,6 +394,12 @@ public class FoldingCell: UITableViewCell {
             self.containerView.alpha = 1
             completion?()
         }
+        let image = UIImage(named: "image1.jpg")
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(x: 20, y: 50, width: 335, height: 125)
+        self.imama = imageView
+        self.contentView.addSubview(self.imama)
+
     }
     
     func closeAnimation(completion completion: CompletionHandler?) {
@@ -425,6 +438,7 @@ public class FoldingCell: UITableViewCell {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
             if let animationView = self.animationView {
                 animationView.alpha = 0
+                self.imama.alpha = 0
             }
             completion?()
         }
@@ -435,10 +449,13 @@ public class FoldingCell: UITableViewCell {
             if let durationLast = durations.last {
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64((delay - durationLast * 1.5) * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
                     firstItemView?.layer.cornerRadius = self.foregroundView.layer.cornerRadius
+                                    self.imama.alpha = 0
                 }
+                
             }
         }
     }
+    
 }
 
 
@@ -482,6 +499,7 @@ extension RotatedView {
         allTransofrom = CATransform3DConcat(allTransofrom, rotateTransform)
         allTransofrom = CATransform3DConcat(allTransofrom, transform3d())
         self.layer.transform = allTransofrom
+        
     }
     
     func transform3d()-> CATransform3D {
@@ -507,11 +525,13 @@ extension RotatedView {
         self.hiddenAfterAnimation = hidden
         
         self.layer.addAnimation(rotateAnimation, forKey: "rotation.x")
+        
     }
     
     override public func animationDidStart(anim: CAAnimation) {
         self.layer.shouldRasterize = true
         self.alpha = 1
+        
     }
     
     override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
@@ -521,6 +541,8 @@ extension RotatedView {
         self.layer.removeAllAnimations()
         self.layer.shouldRasterize = false
         self.rotatedX(CGFloat(0))
+
+        
     }
 }
 
