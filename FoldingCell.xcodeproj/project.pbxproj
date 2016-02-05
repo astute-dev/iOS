@@ -201,16 +201,14 @@
 		847A58061C294F750028FB84 /* FoldingCell */ = {
 			isa = PBXGroup;
 			children = (
-				55A44D2E1C644836004BF7D7 /* Images */,
-				847A58191C294FAB0028FB84 /* FoldingCell */,
-				8499F5D21C2A83D90027D5D2 /* Fonts */,
+				55A44D181C64395C004BF7D7 /* LoginViewController.swift */,
+				55A44D2C1C6443A6004BF7D7 /* WaitingViewController.swift */,
 				847A581E1C29500B0028FB84 /* MainTableViewController.swift */,
+				55A44D451C64CCDC004BF7D7 /* PreCreateViewController.swift */,
+				55A44D431C64BCD9004BF7D7 /* CreateEventViewController.swift */,
 				55A44D3B1C644994004BF7D7 /* Event.swift */,
 				84CDB1591C2D416400FCD7C8 /* DemoCell.swift */,
 				847A58071C294F750028FB84 /* AppDelegate.swift */,
-				55A44D2C1C6443A6004BF7D7 /* WaitingViewController.swift */,
-				55A44D431C64BCD9004BF7D7 /* CreateEventViewController.swift */,
-				55A44D181C64395C004BF7D7 /* LoginViewController.swift */,
 				847A580B1C294F750028FB84 /* Main.storyboard */,
 				847A580E1C294F750028FB84 /* Assets.xcassets */,
 				847A58101C294F750028FB84 /* LaunchScreen.storyboard */,
@@ -221,7 +219,9 @@
 				55A44D1D1C64397D004BF7D7 /* Network.swift */,
 				55A44D1E1C64397D004BF7D7 /* Cookies.swift */,
 				55A44D1F1C64397D004BF7D7 /* UIViewExtensions.swift */,
-				55A44D451C64CCDC004BF7D7 /* PreCreateViewController.swift */,
+				55A44D2E1C644836004BF7D7 /* Images */,
+				847A58191C294FAB0028FB84 /* FoldingCell */,
+				8499F5D21C2A83D90027D5D2 /* Fonts */,
 			);
 			path = FoldingCell;
 			sourceTree = "<group>";
