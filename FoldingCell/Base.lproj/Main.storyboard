@@ -1006,6 +1006,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDE-qu-JP4">
                                 <rect key="frame" x="139" y="487" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="sendRequest:" destination="3Uw-Q5-dYe" eventType="touchUpInside" id="dYp-Lq-HqD"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8MG-xb-Yr7">
                                 <rect key="frame" x="0.0" y="98" width="156" height="44"/>
@@ -1033,6 +1036,6 @@
         <image name="photo" width="98" height="98"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oNk-6o-9RA"/>
+        <segue reference="gV4-xl-Z1Y"/>
     </inferredMetricsTieBreakers>
 </document>

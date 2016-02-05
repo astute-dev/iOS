@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Foundation
+import SwiftyJSON
+import Alamofire
 
 class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     @IBOutlet weak var departPicker: UIPickerView!
     @IBOutlet weak var courseNPicker: UIPickerView!
+
     
     @IBOutlet weak var datePicker: UIDatePicker!
     var hazards = ["a","b", "c"]
@@ -68,6 +72,47 @@ class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPicke
         return ""
     }
 
+    
+    @IBAction func sendRequest(sender: AnyObject) {
+        
+        
+            /**
+             My API
+             POST https://astutedev.herokuapp.com/event
+             */
+             
+             // Add Headers
+            let headers = [
+                "Content-Type":"application/x-www-form-urlencoded",
+            ]
+            
+            // Form URL-Encoded Body
+            let body = [
+                "location":"hello kitty",
+                "course":"303",
+                "end_t":"2016-02-05T00:47:51.107Z",
+                "start_t":"2016-02-05T00:47:51.107Z",
+                "user_id":"1",
+                "description":"we love sports and we dont care who know",
+                "department":"CSCI",
+                "name":"study party",
+                "faculty":"",
+            ]
+            
+            // Fetch Request
+            Alamofire.request(.POST, "https://astutedev.herokuapp.com/event", headers: headers, parameters: body, encoding: .URL)
+                .validate(statusCode: 200..<300)
+                .responseJSON { response in
+                    if (response.result.error == nil) {
+                        debugPrint("HTTP Response Body: \(response.data)")
+                    }
+                    else {
+                        debugPrint("HTTP Request failed: \(response.result.error)")
+                    }
+            }
+
+
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

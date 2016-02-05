@@ -120,7 +120,7 @@
 		8499F5DA1C2A83F70027D5D2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		8499F5DB1C2A83F70027D5D2 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		8499F5DC1C2A83F70027D5D2 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
-		84CDB1591C2D416400FCD7C8 /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		84CDB1591C2D416400FCD7C8 /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoCell.swift; path = ../DemoCell.swift; sourceTree = "<group>"; };
 		8E4788A017E1791EF3DA77DD /* Pods-FoldingCellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoldingCellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoldingCellTests/Pods-FoldingCellTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA0F34EA828C0F25B6A52301 /* Pods-FoldingCellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoldingCellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoldingCellTests/Pods-FoldingCellTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0FEED9C2013285CD99BE97 /* Pods-FoldingCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoldingCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoldingCell/Pods-FoldingCell.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,17 +206,16 @@
 				847A581E1C29500B0028FB84 /* MainTableViewController.swift */,
 				55A44D451C64CCDC004BF7D7 /* PreCreateViewController.swift */,
 				55A44D431C64BCD9004BF7D7 /* CreateEventViewController.swift */,
-				55A44D3B1C644994004BF7D7 /* Event.swift */,
-				84CDB1591C2D416400FCD7C8 /* DemoCell.swift */,
-				847A58071C294F750028FB84 /* AppDelegate.swift */,
 				847A580B1C294F750028FB84 /* Main.storyboard */,
 				847A580E1C294F750028FB84 /* Assets.xcassets */,
 				847A58101C294F750028FB84 /* LaunchScreen.storyboard */,
 				847A58131C294F750028FB84 /* Info.plist */,
 				55A44D1A1C64397D004BF7D7 /* fontawesome-webfont.ttf */,
+				55A44D1D1C64397D004BF7D7 /* Network.swift */,
+				55A44D3B1C644994004BF7D7 /* Event.swift */,
+				847A58071C294F750028FB84 /* AppDelegate.swift */,
 				55A44D1B1C64397D004BF7D7 /* Settings.swift */,
 				55A44D1C1C64397D004BF7D7 /* NextField.swift */,
-				55A44D1D1C64397D004BF7D7 /* Network.swift */,
 				55A44D1E1C64397D004BF7D7 /* Cookies.swift */,
 				55A44D1F1C64397D004BF7D7 /* UIViewExtensions.swift */,
 				55A44D2E1C644836004BF7D7 /* Images */,
@@ -229,6 +228,7 @@
 		847A58191C294FAB0028FB84 /* FoldingCell */ = {
 			isa = PBXGroup;
 			children = (
+				84CDB1591C2D416400FCD7C8 /* DemoCell.swift */,
 				847A581A1C294FAB0028FB84 /* FoldingCell.swift */,
 			);
 			path = FoldingCell;
