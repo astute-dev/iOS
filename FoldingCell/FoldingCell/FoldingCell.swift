@@ -25,7 +25,10 @@ import UIKit
 
 public class FoldingCell: UITableViewCell {
     
+    @IBOutlet weak var eeDescrip: UILabel!
     
+    @IBOutlet weak var coursnumero: UILabel!
+    @IBOutlet weak var username: UILabel!
     
     public typealias CompletionHandler = () -> Void
 
@@ -41,6 +44,9 @@ public class FoldingCell: UITableViewCell {
     @IBOutlet weak var attendees: UILabel!
     @IBOutlet weak var start_time: UILabel!
     @IBOutlet weak var sponsored: UILabel!
+    @IBOutlet weak var ex_location: UILabel!
+    @IBOutlet weak var ex_time: UILabel!
+    @IBOutlet weak var ex_date: UILabel!
     
     
     var animationView: UIView?

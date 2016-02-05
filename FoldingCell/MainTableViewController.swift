@@ -79,14 +79,29 @@ class MainTableViewController: UITableViewController {
         cell.courses.text = content.department[indexPath.item]
         cell.className.text = content.name[indexPath.item]
         cell.attendees.text = content.numStudents[indexPath.item]
-        cell.start_time.text = content.start_t[indexPath.item]
+        
+        //parse time
+        let str = content.start_t[indexPath.item]
+        var sts = str.componentsSeparatedByString("T")
+        let time = sts[1]
+        let dtr = sts[0].componentsSeparatedByString("-")
+        let dtrs = "Date: \(dtr[1])-\(dtr[2])"
+        var timeparse = time.componentsSeparatedByString(":")
+        
+        //parse date
+        
+        cell.start_time.text = "\(timeparse[0]):\(timeparse[1])"
         cell.LLocation.text = content.location[indexPath.item]
-        cell.sponsored.text = content.faculty[indexPath.item]
-        //cell.imageR = UIImageView(image: UIImage(named: content.image_name[indexPath.item]))
-        cell.ex_full_course.text = "\(content.department[indexPath.item])"
-        
-        
-        
+//        cell.sponsored.text = content.faculty[indexPath.item]
+        cell.imageR = UIImageView(image: UIImage(named: content.image_name[indexPath.item]))
+        cell.ex_full_course.text = "\(content.department[indexPath.item]) \(content.course[indexPath.item])"
+        cell.username.text = content.organizer[indexPath.item]
+        cell.eeDescrip.text = content.edescription[indexPath.item]
+        cell.coursnumero.text = content.course[indexPath.item]
+        cell.ex_location.text = content.location[indexPath.item]
+        cell.ex_time.text = "\(timeparse[0]):\(timeparse[1])"
+        cell.ex_date.text = "\(dtrs)"
+ 
         
         return cell
     }
