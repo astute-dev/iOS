@@ -1020,7 +1020,7 @@
                         <outlet property="courseNPicker" destination="HZv-D9-kye" id="17B-wj-o5a"/>
                         <outlet property="datePicker" destination="b9M-hw-Qqt" id="cqU-lK-umH"/>
                         <outlet property="departPicker" destination="8MG-xb-Yr7" id="oU7-rG-fQf"/>
-                        <segue destination="eCJ-S9-Rz3" kind="show" id="gV4-xl-Z1Y"/>
+                        <segue destination="eCJ-S9-Rz3" kind="show" identifier="helloworld" id="gV4-xl-Z1Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lUN-B0-cNf" userLabel="First Responder" sceneMemberID="firstResponder"/>

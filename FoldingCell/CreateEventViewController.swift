@@ -88,7 +88,7 @@ class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPicke
             
             // Form URL-Encoded Body
             let body = [
-                "location":"hello kitty",
+                "location":"A killer house",
                 "course":"303",
                 "end_t":"2016-02-05T00:47:51.107Z",
                 "start_t":"2016-02-05T00:47:51.107Z",
@@ -110,8 +110,7 @@ class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPicke
                         debugPrint("HTTP Request failed: \(response.result.error)")
                     }
             }
-
-
+            self.performSegueWithIdentifier("helloworld", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
