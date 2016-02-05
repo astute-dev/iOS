@@ -50,13 +50,13 @@ class MainTableViewController: UITableViewController {
     func handleSwipes(sender:UISwipeGestureRecognizer) {
         if (sender.direction == .Left) {
             print("Swipe Left")
-            
+            self.performSegueWithIdentifier("create", sender: self)
             
         }
         
         if (sender.direction == .Right) {
             print("Swipe Right")
-            self.performSegueWithIdentifier("index", sender: self)
+            
             
         }
     }
@@ -83,9 +83,7 @@ class MainTableViewController: UITableViewController {
             let row = indexPath.row
             let indexPath = NSIndexPath(forRow: row, inSection: section)
             let cell = tableView.cellForRowAtIndexPath(indexPath) as! FoldingCell
-            print(cell.ex_attendees.text)
             cell.ex_attendees.text = "3"
-            print(cell.ex_attendees.text)
         }
         
         

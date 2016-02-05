@@ -23,12 +23,14 @@
 		55A44D2B1C64397D004BF7D7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A44D1F1C64397D004BF7D7 /* UIViewExtensions.swift */; };
 		55A44D2D1C6443A6004BF7D7 /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A44D2C1C6443A6004BF7D7 /* WaitingViewController.swift */; };
 		55A44D351C644840004BF7D7 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D2F1C644840004BF7D7 /* image4.jpg */; };
-		55A44D361C644840004BF7D7 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D301C644840004BF7D7 /* image2.jpg */; };
+		55A44D361C644840004BF7D7 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D301C644840004BF7D7 /* image6.jpg */; };
 		55A44D371C644840004BF7D7 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D311C644840004BF7D7 /* image1.jpg */; };
 		55A44D381C644840004BF7D7 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D321C644840004BF7D7 /* image5.jpg */; };
-		55A44D391C644840004BF7D7 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D331C644840004BF7D7 /* image6.jpg */; };
-		55A44D3A1C644840004BF7D7 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D341C644840004BF7D7 /* image3.jpg */; };
+		55A44D391C644840004BF7D7 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D331C644840004BF7D7 /* image3.jpg */; };
+		55A44D3A1C644840004BF7D7 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A44D341C644840004BF7D7 /* image2.jpg */; };
 		55A44D3C1C644994004BF7D7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A44D3B1C644994004BF7D7 /* Event.swift */; };
+		55A44D441C64BCD9004BF7D7 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A44D431C64BCD9004BF7D7 /* CreateEventViewController.swift */; };
+		55A44D461C64CCDC004BF7D7 /* PreCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A44D451C64CCDC004BF7D7 /* PreCreateViewController.swift */; };
 		5D09F7E40BACBCFEF843E631 /* Pods_FoldingCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF7F7D414FC57EC131D5151 /* Pods_FoldingCell.framework */; };
 		847A58081C294F750028FB84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A58071C294F750028FB84 /* AppDelegate.swift */; };
 		847A580D1C294F750028FB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A580B1C294F750028FB84 /* Main.storyboard */; };
@@ -85,12 +87,14 @@
 		55A44D1F1C64397D004BF7D7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		55A44D2C1C6443A6004BF7D7 /* WaitingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingViewController.swift; sourceTree = "<group>"; };
 		55A44D2F1C644840004BF7D7 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
-		55A44D301C644840004BF7D7 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		55A44D301C644840004BF7D7 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
 		55A44D311C644840004BF7D7 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		55A44D321C644840004BF7D7 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
-		55A44D331C644840004BF7D7 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
-		55A44D341C644840004BF7D7 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		55A44D331C644840004BF7D7 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		55A44D341C644840004BF7D7 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
 		55A44D3B1C644994004BF7D7 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Fonts/Event.swift; sourceTree = "<group>"; };
+		55A44D431C64BCD9004BF7D7 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		55A44D451C64CCDC004BF7D7 /* PreCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreCreateViewController.swift; sourceTree = "<group>"; };
 		5EF7F7D414FC57EC131D5151 /* Pods_FoldingCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoldingCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BB9C3F590AE65B740299DC /* Pods-FoldingCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoldingCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoldingCell/Pods-FoldingCell.release.xcconfig"; sourceTree = "<group>"; };
 		840B984B1C33FE660081B926 /* FoldingCellFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoldingCellFramework.h; sourceTree = "<group>"; };
@@ -155,11 +159,11 @@
 			isa = PBXGroup;
 			children = (
 				55A44D2F1C644840004BF7D7 /* image4.jpg */,
-				55A44D301C644840004BF7D7 /* image2.jpg */,
+				55A44D301C644840004BF7D7 /* image6.jpg */,
 				55A44D311C644840004BF7D7 /* image1.jpg */,
 				55A44D321C644840004BF7D7 /* image5.jpg */,
-				55A44D331C644840004BF7D7 /* image6.jpg */,
-				55A44D341C644840004BF7D7 /* image3.jpg */,
+				55A44D331C644840004BF7D7 /* image3.jpg */,
+				55A44D341C644840004BF7D7 /* image2.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -205,6 +209,7 @@
 				84CDB1591C2D416400FCD7C8 /* DemoCell.swift */,
 				847A58071C294F750028FB84 /* AppDelegate.swift */,
 				55A44D2C1C6443A6004BF7D7 /* WaitingViewController.swift */,
+				55A44D431C64BCD9004BF7D7 /* CreateEventViewController.swift */,
 				55A44D181C64395C004BF7D7 /* LoginViewController.swift */,
 				847A580B1C294F750028FB84 /* Main.storyboard */,
 				847A580E1C294F750028FB84 /* Assets.xcassets */,
@@ -216,6 +221,7 @@
 				55A44D1D1C64397D004BF7D7 /* Network.swift */,
 				55A44D1E1C64397D004BF7D7 /* Cookies.swift */,
 				55A44D1F1C64397D004BF7D7 /* UIViewExtensions.swift */,
+				55A44D451C64CCDC004BF7D7 /* PreCreateViewController.swift */,
 			);
 			path = FoldingCell;
 			sourceTree = "<group>";
@@ -365,14 +371,14 @@
 				847A580F1C294F750028FB84 /* Assets.xcassets in Resources */,
 				8499F5E31C2A83F70027D5D2 /* OpenSans-LightItalic.ttf in Resources */,
 				8499F5DD1C2A83F70027D5D2 /* OpenSans-Bold.ttf in Resources */,
-				55A44D3A1C644840004BF7D7 /* image3.jpg in Resources */,
+				55A44D3A1C644840004BF7D7 /* image2.jpg in Resources */,
 				55A44D201C64397D004BF7D7 /* fontawesome-webfont.ttf in Resources */,
-				55A44D391C644840004BF7D7 /* image6.jpg in Resources */,
+				55A44D391C644840004BF7D7 /* image3.jpg in Resources */,
 				847A580D1C294F750028FB84 /* Main.storyboard in Resources */,
 				55A44D351C644840004BF7D7 /* image4.jpg in Resources */,
 				8499F5E21C2A83F70027D5D2 /* OpenSans-Light.ttf in Resources */,
 				8499F5DE1C2A83F70027D5D2 /* OpenSans-BoldItalic.ttf in Resources */,
-				55A44D361C644840004BF7D7 /* image2.jpg in Resources */,
+				55A44D361C644840004BF7D7 /* image6.jpg in Resources */,
 				8499F5DF1C2A83F70027D5D2 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +497,9 @@
 				55A44D241C64397D004BF7D7 /* NextField.swift in Sources */,
 				55A44D3C1C644994004BF7D7 /* Event.swift in Sources */,
 				55A44D261C64397D004BF7D7 /* Network.swift in Sources */,
+				55A44D441C64BCD9004BF7D7 /* CreateEventViewController.swift in Sources */,
 				847A58081C294F750028FB84 /* AppDelegate.swift in Sources */,
+				55A44D461C64CCDC004BF7D7 /* PreCreateViewController.swift in Sources */,
 				847A581F1C29500B0028FB84 /* MainTableViewController.swift in Sources */,
 				55A44D2A1C64397D004BF7D7 /* UIViewExtensions.swift in Sources */,
 				84CDB15A1C2D416400FCD7C8 /* DemoCell.swift in Sources */,
