@@ -75,6 +75,22 @@ class MainTableViewController: UITableViewController {
     }
 
 
+    @IBAction func attendBtn(sender: AnyObject) {
+        
+        var position: CGPoint = sender.convertPoint(CGPointZero, toView: self.tableView)
+        if let indexPath = self.tableView.indexPathForRowAtPoint(position) {
+            let section = indexPath.section
+            let row = indexPath.row
+            let indexPath = NSIndexPath(forRow: row, inSection: section)
+            let cell = tableView.cellForRowAtIndexPath(indexPath) as! FoldingCell
+            print(cell.ex_attendees.text)
+            cell.ex_attendees.text = "3"
+            print(cell.ex_attendees.text)
+        }
+        
+        
+        
+    }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
@@ -124,12 +140,14 @@ class MainTableViewController: UITableViewController {
         cell.ex_location.text = content.location[indexPath.item]
         cell.ex_time.text = "\(timeparse[0]):\(timeparse[1])"
         cell.ex_date.text = "\(dtrs)"
-//        var sep = UIImageView(image: UIImage(named: content.image_name[indexPath.item]))
-//        cell.addSubview(sep)
-//        sep.alpha = 0.5
-        
+        cell.ex_attendees.text = content.numStudents[indexPath.item]
+
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        print("fk")
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

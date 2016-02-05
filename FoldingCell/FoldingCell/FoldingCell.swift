@@ -24,6 +24,7 @@
 import UIKit
 
 public class FoldingCell: UITableViewCell {
+    @IBOutlet weak var ex_attendees: UILabel!
     
     @IBOutlet weak var ed: UIImageView!
     @IBOutlet weak var imama: UIImageView!
@@ -31,6 +32,7 @@ public class FoldingCell: UITableViewCell {
     
     @IBOutlet weak var coursnumero: UILabel!
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var attendBtnOutlet: UIButton!
     
     public typealias CompletionHandler = () -> Void
 
@@ -50,7 +52,7 @@ public class FoldingCell: UITableViewCell {
     @IBOutlet weak var ex_time: UILabel!
     @IBOutlet weak var ex_date: UILabel!
     
-    
+    var count = 1
     var animationView: UIView?
     var content: Event!
     
@@ -394,9 +396,10 @@ public class FoldingCell: UITableViewCell {
             self.containerView.alpha = 1
             completion?()
         }
-        let image = UIImage(named: "image1.jpg")
+        let image = UIImage(named: "image\(count).jpg")
+        self.count += 1
         let imageView = UIImageView(image: image)
-        imageView.frame = CGRect(x: 20, y: 50, width: 335, height: 125)
+        imageView.frame = CGRect(x: 20, y: 50, width: 280, height: 125)
         self.imama = imageView
         self.contentView.addSubview(self.imama)
 
