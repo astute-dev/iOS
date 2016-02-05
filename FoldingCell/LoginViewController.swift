@@ -16,6 +16,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var passTextOutlet: UITextField!
     @IBOutlet weak var confirmPassTextOutlet: UITextField!
     
+    @IBOutlet weak var rightDot: UILabel!
+    @IBOutlet weak var leftDot: UILabel!
     @IBOutlet weak var confirmPassIconLabel: UILabel!
     @IBOutlet weak var userIconLabel: UILabel!
     @IBOutlet weak var passIconLabel: UILabel!
@@ -99,6 +101,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         let username = usernameTextOutlet.text
         let password = passTextOutlet.text
         let phone = confirmPassTextOutlet.text
+
+        animateDot()
+
         if (username!.isEmpty) || (password!.isEmpty) {
             print("LoginViewController: Not all fields are filled.")
             jiggleLogin()
@@ -222,7 +227,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
     
     */
     @IBAction func registerButton(sender: AnyObject) {
-        
+        animateDot()
         if createAcctBtn.titleLabel!.text == "Don't have an account? REGISTER" {
             
             print("LoginViewController: User pressed Registration button, updating UI to show phone label.")
@@ -381,7 +386,25 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
             name: UIKeyboardWillHideNotification,
             object: nil)
     }
-    
+    func animateDot() {
+        UIView.animateWithDuration(0.5, delay:0, options: [.Repeat, .Autoreverse],
+            animations: {
+                self.leftDot.frame.origin.x += 20
+                self.rightDot.frame.origin.x -= 20
+            },
+            completion: { finish in
+                UIView.animateWithDuration(
+                    0.3,
+                    animations: {
+                        self.leftDot.frame.origin.x -= 20
+                        self.rightDot.frame.origin.x += 20
+                    },
+                    completion: nil
+                )
+            }
+        )
+        
+    }
     func jiggleLogin() {
         UIView.animateWithDuration(
             0.1,
@@ -423,6 +446,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
             if let _ = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
                 UIView.animateWithDuration(0.5, animations: {
                     self.logo.alpha = 0.0
+                    self.leftDot.alpha = 0.0
+                    self.rightDot.alpha = 0.0
                     
                     
                 })
@@ -464,7 +489,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
                 
                 UIView.animateWithDuration(0.5, animations: {
                     self.logo.alpha = 1.0
-                    
+                    self.leftDot.alpha = 1.0
+                    self.rightDot.alpha = 1.0
                     
                 })
                 self.keyboardUp = false

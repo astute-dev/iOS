@@ -88,15 +88,15 @@ class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPicke
             
             // Form URL-Encoded Body
             let body = [
-                "location":"A killer house",
+                "location":"Dominion Enterprises",
                 "course":"303",
                 "end_t":"2016-02-05T00:47:51.107Z",
                 "start_t":"2016-02-05T00:47:51.107Z",
                 "user_id":"1",
-                "description":"we love sports and we dont care who know",
+                "description":"Let's study!",
                 "department":"CSCI",
-                "name":"study party",
-                "faculty":"",
+                "name":"DeHacks",
+                "faculty":"false",
             ]
             
             // Fetch Request

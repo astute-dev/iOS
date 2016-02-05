@@ -203,8 +203,20 @@
                                             <action selector="registerButton:" destination="ZMk-aX-aQK" eventType="touchUpInside" id="jyQ-0R-E5n"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bje-L8-CWc">
+                                        <rect key="frame" x="166" y="-20" width="21" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkK-sc-yFN">
+                                        <rect key="frame" x="196" y="-20" width="21" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="M4i-9V-1fM">
-                                        <rect key="frame" x="79" y="35" width="249" height="114"/>
+                                        <rect key="frame" x="79" y="40" width="249" height="114"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="114" id="bxe-fz-2eD"/>
                                             <constraint firstAttribute="width" constant="249" id="fjK-YW-vLY"/>
@@ -217,7 +229,7 @@
                                     <constraint firstAttribute="trailing" secondItem="aaM-1c-e3X" secondAttribute="trailing" constant="33" id="9mo-lW-Tum"/>
                                     <constraint firstAttribute="centerX" secondItem="1oI-lf-Wi3" secondAttribute="centerX" constant="-0.5" id="ATR-qB-SIK"/>
                                     <constraint firstAttribute="trailing" secondItem="fxa-cI-vej" secondAttribute="trailing" constant="33" id="Ax6-ea-wFk"/>
-                                    <constraint firstItem="fxa-cI-vej" firstAttribute="top" secondItem="M4i-9V-1fM" secondAttribute="bottom" constant="54" id="BED-4B-wCe"/>
+                                    <constraint firstItem="fxa-cI-vej" firstAttribute="top" secondItem="M4i-9V-1fM" secondAttribute="bottom" constant="49" id="BED-4B-wCe"/>
                                     <constraint firstAttribute="centerX" secondItem="QfV-ps-OB9" secondAttribute="centerX" id="Bvz-P3-WhN"/>
                                     <constraint firstItem="Vd6-Ul-lP6" firstAttribute="leading" secondItem="aaM-1c-e3X" secondAttribute="trailing" constant="-241" id="DBL-qR-lSr"/>
                                     <constraint firstAttribute="trailing" secondItem="lj0-Ji-gql" secondAttribute="trailing" constant="33" id="EWA-hH-Rob"/>
@@ -246,7 +258,7 @@
                                     <constraint firstItem="aaM-1c-e3X" firstAttribute="leading" secondItem="uPo-rf-pDf" secondAttribute="leading" constant="34" id="qr4-wO-apu"/>
                                     <constraint firstItem="QfV-ps-OB9" firstAttribute="centerX" secondItem="wHF-NY-guD" secondAttribute="centerX" id="r3g-dY-1E7"/>
                                     <constraint firstItem="lj0-Ji-gql" firstAttribute="leading" secondItem="uPo-rf-pDf" secondAttribute="leading" constant="61" id="rAs-Dh-nDl"/>
-                                    <constraint firstItem="M4i-9V-1fM" firstAttribute="top" secondItem="uPo-rf-pDf" secondAttribute="top" constant="35" id="rT9-7o-68n"/>
+                                    <constraint firstItem="M4i-9V-1fM" firstAttribute="top" secondItem="uPo-rf-pDf" secondAttribute="top" constant="40" id="rT9-7o-68n"/>
                                     <constraint firstItem="lj0-Ji-gql" firstAttribute="centerY" secondItem="3bs-vt-HTq" secondAttribute="centerY" constant="-0.5" id="ujg-h6-XlV"/>
                                     <constraint firstItem="Vd6-Ul-lP6" firstAttribute="centerY" secondItem="jZL-fa-nai" secondAttribute="centerY" constant="0.5" id="usQ-Pt-Vzl"/>
                                     <constraint firstItem="wHF-NY-guD" firstAttribute="centerY" secondItem="fxa-cI-vej" secondAttribute="centerY" constant="-0.5" id="wUn-Lj-GWG"/>
@@ -293,11 +305,13 @@
                         <outlet property="confirmPassTextOutlet" destination="Vd6-Ul-lP6" id="BMj-du-zCJ"/>
                         <outlet property="confirmPassUnderline" destination="aaM-1c-e3X" id="Cwb-fa-Gh7"/>
                         <outlet property="createAcctBtn" destination="QfV-ps-OB9" id="PG8-fC-I7t"/>
+                        <outlet property="leftDot" destination="bje-L8-CWc" id="UWf-LF-K0m"/>
                         <outlet property="loginBtn" destination="1oI-lf-Wi3" id="hqg-Qt-Pqz"/>
                         <outlet property="logo" destination="M4i-9V-1fM" id="JmS-6W-q8A"/>
                         <outlet property="passIconLabel" destination="3bs-vt-HTq" id="p88-2q-vMx"/>
                         <outlet property="passTextOutlet" destination="lj0-Ji-gql" id="QF9-gf-BUT"/>
                         <outlet property="passUnderline" destination="Pe1-vM-WXl" id="F0d-tB-L2l"/>
+                        <outlet property="rightDot" destination="LkK-sc-yFN" id="wAB-gT-GQW"/>
                         <outlet property="userIconLabel" destination="wHF-NY-guD" id="JrS-WT-3lY"/>
                         <outlet property="userUnderline" destination="heb-vh-Vcx" id="ln5-SI-JBa"/>
                         <outlet property="usernameTextOutlet" destination="fxa-cI-vej" id="V37-F2-qf9"/>
@@ -683,9 +697,9 @@
                                                                     <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.49546030410000003" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jX-4j-vu8">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="24 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jX-4j-vu8">
                                                                     <rect key="frame" x="0.0" y="26" width="256" height="21"/>
-                                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="11"/>
                                                                     <color key="textColor" red="0.20392156859999999" green="0.23921568630000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -1036,6 +1050,6 @@
         <image name="photo" width="98" height="98"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gV4-xl-Z1Y"/>
+        <segue reference="oNk-6o-9RA"/>
     </inferredMetricsTieBreakers>
 </document>
