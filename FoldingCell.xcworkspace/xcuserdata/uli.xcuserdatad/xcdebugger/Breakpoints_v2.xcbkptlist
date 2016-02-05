@@ -25,30 +25,91 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FoldingCell/MainTableViewController.swift"
-            timestampString = "476363530.352546"
+            filePath = "FoldingCell/FoldingCell/FoldingCell.swift"
+            timestampString = "476389230.208827"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "tableView(_:heightForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoldingCell/MainTableViewController.swift"
-            timestampString = "476363530.352546"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "FoldingCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoldingCell.FoldingCell.className.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "FoldingCell"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ulisesgiacoman/Documents/Projects/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift"
+                  timestampString = "476389230.25516"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoldingCell.FoldingCell.className.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "FoldingCell"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ulisesgiacoman/Documents/Projects/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift"
+                  timestampString = "476389230.255801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoldingCell.FoldingCell.className.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "FoldingCell"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ulisesgiacoman/Documents/Projects/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift"
+                  timestampString = "476389230.256362"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoldingCell.FoldingCell.init (FoldingCell.FoldingCell.Type)(style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; FoldingCell.FoldingCell"
+                  moduleName = "FoldingCell"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ulisesgiacoman/Documents/Projects/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift"
+                  timestampString = "476389230.256617"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "951">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoldingCell.FoldingCell.init (FoldingCell.FoldingCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FoldingCell.FoldingCell&gt;"
+                  moduleName = "FoldingCell"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ulisesgiacoman/Documents/Projects/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift"
+                  timestampString = "476389230.25716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "854">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

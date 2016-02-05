@@ -10,11 +10,18 @@ import UIKit
 
 class PreCreateViewController: UIViewController {
 
+    @IBOutlet weak var nextBtnOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
+        
+        
+        nextBtnOutlet.backgroundColor = UIColor.clearColor()
+
+        nextBtnOutlet.layer.borderWidth = 2
+        nextBtnOutlet.layer.borderColor = UIColor.whiteColor().CGColor
         // Do any additional setup after loading the view.
     }
 

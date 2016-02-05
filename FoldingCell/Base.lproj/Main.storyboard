@@ -849,6 +849,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="AttendBtnOUtlet" destination="Ems-Pc-RWL" id="zhw-9E-fb8"/>
                                     <outlet property="LLocation" destination="Y97-hN-Duu" id="g2K-ru-yp7"/>
                                     <outlet property="attendBtnOutlet" destination="Ems-Pc-RWL" id="equ-Ce-3YX"/>
                                     <outlet property="attendees" destination="Odz-yl-q6k" id="ux1-2g-IJ7"/>
@@ -936,16 +937,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY9-pk-pSo">
-                                <rect key="frame" x="102" y="454" width="117" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3Uw-Q5-dYe" kind="presentation" modalTransitionStyle="flipHorizontal" id="uxd-Uo-gRv"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-nC-21x">
                                 <rect key="frame" x="41" y="136" width="25" height="37"/>
                                 <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="25"/>
@@ -958,9 +949,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY9-pk-pSo">
+                                <rect key="frame" x="102" y="419" width="117" height="52"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Uw-Q5-dYe" kind="presentation" modalTransitionStyle="crossDissolve" id="uxd-Uo-gRv"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="nextBtnOutlet" destination="JY9-pk-pSo" id="8Ap-Kx-E4p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8U-qD-7dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -985,7 +989,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZv-D9-kye">
-                                <rect key="frame" x="155" y="98" width="156" height="44"/>
+                                <rect key="frame" x="115" y="98" width="156" height="44"/>
                             </pickerView>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="b9M-hw-Qqt">
                                 <rect key="frame" x="0.0" y="223" width="320" height="68"/>
@@ -997,12 +1001,6 @@
                                 <rect key="frame" x="292" y="383" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-Wq-da0">
-                                <rect key="frame" x="120" y="185" width="80" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mij-7H-Tbd">
@@ -1018,15 +1016,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDE-qu-JP4">
-                                <rect key="frame" x="139" y="487" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <rect key="frame" x="106" y="459" width="107" height="51"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="sendRequest:" destination="3Uw-Q5-dYe" eventType="touchUpInside" id="dYp-Lq-HqD"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8MG-xb-Yr7">
-                                <rect key="frame" x="0.0" y="98" width="156" height="44"/>
+                                <rect key="frame" x="35" y="98" width="156" height="44"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbZ-Wq-da0">
+                                <rect key="frame" x="120" y="185" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -1034,6 +1041,7 @@
                         <outlet property="courseNPicker" destination="HZv-D9-kye" id="17B-wj-o5a"/>
                         <outlet property="datePicker" destination="b9M-hw-Qqt" id="cqU-lK-umH"/>
                         <outlet property="departPicker" destination="8MG-xb-Yr7" id="oU7-rG-fQf"/>
+                        <outlet property="submitBtn" destination="KDE-qu-JP4" id="NCf-ht-pbu"/>
                         <segue destination="eCJ-S9-Rz3" kind="show" identifier="helloworld" id="gV4-xl-Z1Y"/>
                     </connections>
                 </viewController>

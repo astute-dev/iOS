@@ -39,6 +39,7 @@ public class FoldingCell: UITableViewCell {
     @IBOutlet weak var ex_full_course: UILabel!
     @IBOutlet weak var imageR: UIImageView!
 
+    @IBOutlet weak var AttendBtnOUtlet: UIButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var foregroundView: RotatedView!
     @IBOutlet weak var courses: UILabel!

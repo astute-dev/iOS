@@ -84,6 +84,12 @@ class MainTableViewController: UITableViewController {
             let indexPath = NSIndexPath(forRow: row, inSection: section)
             let cell = tableView.cellForRowAtIndexPath(indexPath) as! FoldingCell
             cell.ex_attendees.text = "3"
+            cell.attendBtnOutlet.backgroundColor = UIColor(hue: 0.4444, saturation: 0.8, brightness: 0.34, alpha: 1.0) /* #115740 */
+            cell.attendBtnOutlet.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+            cell.attendBtnOutlet.setTitle("Joined!", forState: UIControlState.Normal)
+            
+            
+            
         }
         
         

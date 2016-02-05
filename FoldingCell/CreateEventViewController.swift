@@ -15,6 +15,7 @@ class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPicke
     
     @IBOutlet weak var departPicker: UIPickerView!
     @IBOutlet weak var courseNPicker: UIPickerView!
+    @IBOutlet weak var submitBtn: UIButton!
 
     
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -36,6 +37,10 @@ class CreateEventViewController: UIViewController,UIPickerViewDataSource,UIPicke
         departPicker.tag = 0
         courseNPicker.tag = 1
         datePicker.tag = 2
+        submitBtn.backgroundColor = UIColor.clearColor()
+        
+        submitBtn.layer.borderWidth = 2
+        submitBtn.layer.borderColor = UIColor.whiteColor().CGColor
         
     }
     
